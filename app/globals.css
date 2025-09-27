@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* VidSynth Professional Video Creation Theme */
+  --color-bg: #0a0e1a;
+  --color-fg: #f8fafc;
+  --color-accent: #ffd700;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-muted: #64748b;
+  
+  /* Additional theme colors */
+  --color-primary: #3b82f6;
+  --color-secondary: #8b5cf6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+}
+
+[data-theme="celo"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --color-accent: #fbcc5c;
+  --color-surface: #1a1a1a;
+  --color-border: #333333;
+  --color-muted: #666666;
+}
+
+[data-theme="solana"] {
+  --color-bg: #1a0d2e;
+  --color-fg: #ffffff;
+  --color-accent: #9945ff;
+  --color-surface: #2d1b4e;
+  --color-border: #4c2a85;
+  --color-muted: #8b7db8;
+}
+
+[data-theme="base"] {
+  --color-bg: #0f172a;
+  --color-fg: #f1f5f9;
+  --color-accent: #0052ff;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-muted: #64748b;
+}
+
+[data-theme="coinbase"] {
+  --color-bg: #0c1426;
+  --color-fg: #f1f5f9;
+  --color-accent: #0052ff;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-muted: #64748b;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface/80 backdrop-blur-sm border border-border/50 rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-bg px-6 py-3 rounded-lg font-medium hover:bg-accent/90 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-fg px-6 py-3 rounded-lg font-medium hover:bg-surface/80 transition-all duration-200 border border-border;
+  }
+  
+  .metric-card {
+    @apply glass-card p-6 hover:bg-surface/90 transition-all duration-200;
+  }
+  
+  .video-card {
+    @apply glass-card overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent;
+  }
+  
+  .nav-link {
+    @apply px-4 py-2 rounded-lg text-muted hover:text-fg hover:bg-surface/50 transition-all duration-200;
+  }
+  
+  .nav-link.active {
+    @apply text-accent bg-accent/10;
+  }
+}
+
+@layer utilities {
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px var(--color-accent);
+    }
+    to {
+      box-shadow: 0 0 30px var(--color-accent), 0 0 40px var(--color-accent);
+    }
+  }
+}
