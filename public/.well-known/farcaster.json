@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "VidSynth",
+    "subtitle": "Built with Zara",
+    "description": "VidSynth is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://56eb63d8a7864c1488e1b60770c94c9e-jucw.vercel.app",
+    "splashImageUrl": "https://56eb63d8a7864c1488e1b60770c94c9e-jucw.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://56eb63d8a7864c1488e1b60770c94c9e-jucw.vercel.app/image.png",
+    "tagline": "VidSynth",
+    "screenshotUrls": [
+      "https://56eb63d8a7864c1488e1b60770c94c9e-jucw.vercel.app/screenshot.png",
+      "https://56eb63d8a7864c1488e1b60770c94c9e-jucw.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://56eb63d8a7864c1488e1b60770c94c9e-jucw.vercel.app/api/webhook"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "VidSynth",
+  "description": "VidSynth is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://56eb63d8-a786-4c14-88e1-b60770c94c9e.vercel.app",
+  "properties": {
+    "app": {
+      "name": "VidSynth",
+      "description": "VidSynth is a Base Mini App built with Zara.",
+      "url": "https://56eb63d8-a786-4c14-88e1-b60770c94c9e.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
